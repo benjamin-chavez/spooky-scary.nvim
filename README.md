@@ -1,7 +1,7 @@
 # Spooky Scary Color Theme for Neovim
 
 A Neovim port of [Spooky Scary Color Theme](https://marketplace.visualstudio.com/items?itemName=rothecoder.spooky-scary-color-theme),
-the Halloween VS Code theme by [Ro (rothecoder)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
+the Halloween VS Code theme by [Rojhan Paydar (rojhanpaydar)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
 Black, green, orange and purple, inspired by spooky season and Tim Burton films. This repository
 contains only the Neovim colorscheme; the VS Code theme is hers, and the link above is the place
 to get it.
@@ -65,7 +65,7 @@ and diffs every character. The few remaining differences are listed with reasons
 
 ## Credits
 
-- The theme, its palette and the idea are by [Ro (rothecoder)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
+- The theme, its palette and the idea are by [Rojhan Paydar (rojhanpaydar)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
   Her theme file is kept unchanged under `tools/compare/reference/` as the fixture the port is checked against.
   This port is published with her permission.
 - The ghost animation is by [Finkel Band](https://giphy.com/finkelband), as used in the original theme's Power Mode setup.
