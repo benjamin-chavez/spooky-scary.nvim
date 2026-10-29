@@ -6,7 +6,7 @@ Black, green, orange and purple, inspired by spooky season and Tim Burton films.
 contains only the Neovim colorscheme; the VS Code theme is hers, and the link above is the place
 to get it.
 
-![Preview of the theme in VS Code: a black, green, orange and purple editor](https://media.giphy.com/media/ZljsomV1FjhgkVIjYh/source.gif)
+![Neovim with the Spooky Scary colorscheme: a file tree and a TypeScript file in black, green, orange and purple](assets/preview.png)
 
 The port is verified token by token against VS Code's own tokenizer, so what you see in Neovim is
 what the VS Code theme paints, down to the ghost.
@@ -15,7 +15,7 @@ Install with lazy.nvim:
 
 ```lua
 {
-  "benjamin-chavez/spooky-scary-color-theme",
+  "benjamin-chavez/spooky-scary.nvim",
   priority = 1000,
   config = function()
     vim.cmd.colorscheme("spooky-scary")
@@ -35,8 +35,8 @@ the one query predicate they use.
 
 ## The ghost
 
-The Power Mode ghost from above works in Neovim too, without Power Mode, and it is on as soon
-as the colorscheme loads. `:SpookyHauntToggle` turns it off or on and remembers the choice
+The Power Mode ghost from the original theme's preview works in Neovim too, without Power Mode,
+and it is on as soon as the colorscheme loads. `:SpookyHauntToggle` turns it off or on and remembers the choice
 across sessions in Neovim's data directory; `:SpookyHauntEnable` and `:SpookyHauntDisable` do
 the same explicitly. To change its settings, call setup after the colorscheme:
 
@@ -50,9 +50,9 @@ Set `vim.g.spooky_scary_haunt = false` before loading the colorscheme if you nev
 up at all.
 
 Every twenty characters typed in insert mode, a small ghost rises out of the cursor line and
-vanishes, the way it does in the preview at the top of this README. Like Power Mode's mask
+vanishes, the way it does in [the original theme's preview GIF](https://media.giphy.com/media/ZljsomV1FjhgkVIjYh/source.gif). Like Power Mode's mask
 mode, it takes the color of whatever you are typing: purple in plain text, green in a tag,
-orange in a string. In Ghostty, Kitty or WezTerm it is the README's GIF drawn with the Kitty
+orange in a string. In Ghostty, Kitty or WezTerm it is that GIF drawn with the Kitty
 graphics protocol, cropped to the part Power Mode shows and pre-tinted for each theme color. In other terminals, or inside tmux, a ghost glyph rises and fades
 instead. `:SpookyHaunt` summons it on demand, `graphics = "text"` forces the glyph version, and
 `columns`, `rows` and `column_offset` move or resize it. `frames.lua` and the PNG frames under
@@ -67,5 +67,6 @@ and diffs every character. The few remaining differences are listed with reasons
 
 - The theme, its palette and the idea are by [Ro (rothecoder)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
   Her theme file is kept unchanged under `tools/compare/reference/` as the fixture the port is checked against.
+  This port is published with her permission.
 - The ghost animation is by [Finkel Band](https://giphy.com/finkelband), as used in the original theme's Power Mode setup.
 - Power Mode, which inspired the ghost, is [Cody Hoover's extension](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode).
