@@ -6,7 +6,7 @@ Black, green, orange and purple, inspired by spooky season and Tim Burton films.
 contains only the Neovim colorscheme; the VS Code theme is hers, and the link above is the place
 to get it.
 
-![Neovim with the Spooky Scary colorscheme: a file tree and a TypeScript file in black, green, orange and purple](assets/preview.png)
+![Neovim typing the original theme's index.html in the Spooky Scary colorscheme, with a ghost rising from the cursor line every twenty keystrokes](assets/preview.gif)
 
 The port is verified token by token against VS Code's own tokenizer, so what you see in Neovim is
 what the VS Code theme paints, down to the ghost.
@@ -49,10 +49,12 @@ require("spooky-scary.haunt").setup({
 Set `vim.g.spooky_scary_haunt = false` before loading the colorscheme if you never want it set
 up at all.
 
+![An animated looping image of a cartoon ghost flying upward and disappearing](https://media.giphy.com/media/WngnWxxekMn8DIqmwQ/giphy.gif)
+
 Every twenty characters typed in insert mode, a small ghost rises out of the cursor line and
-vanishes, the way it does in [the original theme's preview GIF](https://media.giphy.com/media/ZljsomV1FjhgkVIjYh/source.gif). Like Power Mode's mask
+vanishes, the way it does in the preview at the top of this page. Like Power Mode's mask
 mode, it takes the color of whatever you are typing: purple in plain text, green in a tag,
-orange in a string. In Ghostty, Kitty or WezTerm it is that GIF drawn with the Kitty
+orange in a string. In Ghostty, Kitty or WezTerm it is the GIF above drawn with the Kitty
 graphics protocol, cropped to the part Power Mode shows and pre-tinted for each theme color. In other terminals, or inside tmux, a ghost glyph rises and fades
 instead. `:SpookyHaunt` summons it on demand, `graphics = "text"` forces the glyph version, and
 `columns`, `rows` and `column_offset` move or resize it. `frames.lua` and the PNG frames under
@@ -68,5 +70,5 @@ and diffs every character. The few remaining differences are listed with reasons
 - The theme, its palette, and the idea are by [Rojhan Paydar (@rojhanpaydar)](https://github.com/rojhanpaydar).
   Her theme file is kept unchanged under `tools/compare/reference/` as the fixture the port is checked against.
   This port is published with her permission.
-- The ghost animation is by [Finkel Band](https://giphy.com/finkelband), as used in the original theme's Power Mode setup.
+- The ghost animation is by [Finkel Band](https://giphy.com/finkelband), in the faster version Rojhan Paydar uploaded for the original theme's Power Mode setup.
 - Power Mode, which inspired the ghost, is [Cody Hoover's extension](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode).
