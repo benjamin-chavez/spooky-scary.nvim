@@ -65,7 +65,7 @@ and diffs every character. The few remaining differences are listed with reasons
 
 ## Credits
 
-- The theme, its palette and the idea are by [Rojhan Paydar (rojhanpaydar)](https://github.com/rojhanpaydar/spooky-scary-color-theme).
+- The theme, its palette, and the idea are by [Rojhan Paydar (@rojhanpaydar)](https://github.com/rojhanpaydar).
   Her theme file is kept unchanged under `tools/compare/reference/` as the fixture the port is checked against.
   This port is published with her permission.
 - The ghost animation is by [Finkel Band](https://giphy.com/finkelband), as used in the original theme's Power Mode setup.
