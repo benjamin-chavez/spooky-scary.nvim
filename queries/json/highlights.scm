@@ -3,7 +3,9 @@
 "\"" @spooky.punctuation
 (escape_sequence) @spooky.string.escape
 
-((string (escape_sequence) @spooky.string.escape . (string_content) @_unicode_digits)
+; This pattern leaves out the (string) parent because jsonc inherits this file. Its grammar
+; nests escapes inside string_content, so naming the parent stops the whole query compiling.
+((escape_sequence) @spooky.string.escape . (string_content) @_unicode_digits
   (#eq? @spooky.string.escape "\\u")
   (#lua-match? @_unicode_digits "^%x%x%x%x")
   (#offset! @spooky.string.escape 0 0 0 4))
